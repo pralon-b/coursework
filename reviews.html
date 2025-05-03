@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Converse store- Reviews Page</title>
+    <link rel="stylesheet" href="css/reviews.css">
+</head>
+<body>
+    <h1>Converse</h1>
+    <hr>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="product.html">Products</a>
+        <a href="blog.html">Blog</a>
+        <a href="research.html">Research</a>
+        <a href="about.html">About Us</a>
+    </nav>
+    <hr>
+
+    <!-- Review Form Section -->
+    <section class="review-form">
+        <h2>Write a Review</h2>
+        <form action="#" method="post">
+            <p>
+                <label for="name">Your Name:</label><br>
+                <input type="text" id="name" name="name" required>
+            </p>
+            <p>
+                <label for="rating">Rating:</label><br>
+                <select id="rating" name="rating" required>
+                    <option value="5">★★★★★ (5 Stars)</option>
+                    <option value="4">★★★★☆ (4 Stars)</option>
+                    <option value="3">★★★☆☆ (3 Stars)</option>
+                    <option value="2">★★☆☆☆ (2 Stars)</option>
+                    <option value="1">★☆☆☆☆ (1 Star)</option>
+                </select>
+            </p>
+            <p>
+                <label for="review">Your Review:</label><br>
+                <textarea id="review" name="review" rows="5" cols="30" required></textarea>
+            </p>
+            <p>
+                <input type="submit" value="Submit Review" class="submit-button">
+            </p>
+        </form>
+    </section>
+
+    <!-- Other Reviews Section -->
+    <section class="reviews">
+        <h2>Customer Reviews</h2>
+        <div class="review-box">
+            <h3>Pralon Basnet</h3>
+            <p class="rating">★★★★☆ (4/5)</p>
+            <p>These converse are super comfortable and look great! Only wish they came in more colors.</p>
+        </div>
+        <div class="review-box">
+            <h3>Anubhav Pradhan</h3>
+            <p class="rating">★★★★★ (5/5)</p>
+            <p>The Anime Converse is amazing! They’re stylish and very well-made. Highly recommend!</p>
+        </div>
+        <div class="review-box">
+            <h3>Priyanka Shah</h3>
+            <p class="rating">★★★☆☆ (3/5)</p>
+            <p>The Doodled Converse are okay, but the laces could be more durable.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>Contact Us: support@Conversestore.com | 9745556666</p>
+        <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="product.html">Product</a>
+            <a href="blog.html">Blog</a>
+            <a href="research.html">Research</a>
+            <a href="about.html">About Us</a>
+        </div>
+        <p>2025 Converse Store. All rights Reserved.</p>
+    </footer>
+</body>
+</html>

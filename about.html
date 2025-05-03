@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About Us</title>
+  <link rel="stylesheet" href="/src/css/about.css">
+  <style>
+    /* Base Reset & Global Styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #e4dede;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    /* Header & Navigation */
+    header {
+      background-color: #333333;
+      color: white;
+      padding: 20px 0;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      text-align: center;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      margin-bottom: 15px;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: #ffffff;
+      font-weight: 500;
+      font-size: 16px;
+      padding: 10px 15px;
+      border-radius: 5px;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    nav a:hover {
+      background-color: #2563eb;
+      color: #ffffff;
+    }
+
+    header h1 {
+      font-size: 36px;
+      margin-bottom: 5px;
+      font-weight: 600;
+    }
+
+    header p {
+      font-size: 16px;
+      color: #cbd5e1;
+    }
+
+    /* Main Content */
+    main {
+      max-width: 1100px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    h2 {
+      font-size: 28px;
+      margin-bottom: 15px;
+      color: #1e40af;
+    }
+
+    section {
+      margin-bottom: 50px;
+    }
+
+    section p {
+      font-size: 16px;
+      color: #555;
+      line-height: 1.7;
+    }
+
+    /* Team Section */
+    .team {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 30px;
+      margin-top: 20px;
+    }
+
+    .member {
+      background-color: #ffffff;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .member:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+    }
+
+    .member img {
+      border-radius: 50%;
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      margin-bottom: 15px;
+      border: 3px solid #e5e7eb;
+    }
+
+    .member h3 {
+      margin-bottom: 8px;
+      font-size: 18px;
+      color: #111827;
+    }
+
+    .portfolio-btn {
+      margin-top: 10px;
+      padding: 8px 16px;
+      background-color: #2563eb;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 14px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .portfolio-btn:hover {
+      background-color: #1d4ed8;
+    }
+
+    @media (max-width: 600px) {
+      nav {
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      header h1 {
+        font-size: 28px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="product.html">Products</a>
+      <a href="blog.html">Blog</a>
+      <a href="research.html">Research</a>
+      <a href="about.html">About Us</a>
+      
+    </nav>
+    <h1>About Us</h1>
+    <p>Learn more about our journey and values</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>Who We Are</h2>
+      <p>
+        We are a passionate team dedicated to delivering the best solutions in our field. Our company was founded with the vision of making a difference in people's lives through innovation and quality service.
+      </p>
+    </section>
+
+    <section>
+      <h2>Meet Our Team</h2>
+      <div class="team">
+        <div class="member">
+          <img src="/src/img/priyanka.jpeg" alt="Priyanka Kumari Sah">
+          <h3>Priyanka Kumari Sah</h3>
+          <a href="portfolio1.html">
+            <button class="portfolio-btn">View Portfolio</button>
+          </a>
+        </div>
+        <div class="member">
+          <img src="/src/img/ujala.jpg" alt="Ujala Kumari Sah">
+          <h3>Ujala Kumari Sah</h3>
+          <a href="portfolio2.html">
+            <button class="portfolio-btn">View Portfolio</button>
+          </a>
+        </div>
+        <div class="member">
+          <img src="/src/img/anubhav.jpg" alt="Anubhav Pradhan">
+          <h3>Anubhav Pradhan</h3>
+          <a href="portfolio3.html">
+            <button class="portfolio-btn">View Portfolio</button>
+          </a>
+        </div>
+        <div class="member">
+          <img src="/src/img/pralon.jpg" alt="Pralon Basnet">
+          <h3>Pralon Basnet</h3>
+          <a href="portfoilio4.html">
+            <button class="portfolio-btn">View Portfolio</button>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Our Mission</h2>
+      <p>
+        Our mission is to empower individuals and businesses by providing reliable and effective products and services. We strive to exceed expectations and build lasting relationships with our clients.
+      </p>
+    </section>
+
+    <section>
+      <h2>Contact Us</h2>
+      <p>Email: contact@yourcompany.com</p>
+      <p>Phone: +123 456 7890</p>
+    </section>
+  </main>
+  <footer>
+            <p>Contact Us: support@Conversestore.com | 9745556666</p>
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="product.html">Product</a>
+                <a href="blog.html">Blog</a>
+                <a href="research.html">Research</a>
+                <a href="about.html">About Us</a>
+            </div>
+            <p>2025 Converse Store. All rights Reserved.</p>
+        </footer>
+</body>
+</html>
